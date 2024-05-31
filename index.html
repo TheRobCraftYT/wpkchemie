@@ -1,41 +1,100 @@
-<DOCTYPE=HTML>
-<html>
-    <head>
-        <title>WPK Chemie</title>
-    </head>
-    <body bgcolor="lightblue">
-        <img src="logo.png" width="50" height="50">
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPK Chemie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 24px;
+        }
+        main {
+            padding: 20px;
+        }
+        hr {
+            border: 1px solid #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #333;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .links a:hover {
+            background-color: #333;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="WPK Chemie Logo">
         <h1>WPK Chemie Kunsthonig Versuch</h1>
-        <hr>
-        <p size="20">Kunsthonig ist eine, wie im Namen schon gesagt, Honigalternative. Diese Honigalternative wird <b>Invertzuckersirup</b> genannt. Diesen werde ich in den folgenden zwei Versuchen versuchen herzustellen. Außerdem werde ich später einige Experimente durchführen, um zu sehen, ob es die gleichen Eigenschaften wie "normaler" Blütenhonig, gefertigt von Bienen hat.</p>
-        <h2 align="center"><u>Wählen Sie die Datei</u></h2>
-        <br>
-        <a href="try1.html">
-        <h2>Zum Protokoll</h2>
-        </a>
-        <a href="https://youtu.be/H3m2DqdDFKg?si=wilUlt65vXia1oL-">
-            <h2>Zum Video</h2>
-        </a>
-        <a href="https://youtu.be/GLkS-4ofDNc">
-            <h2>Zum Video des zweiten Versuchs</h2>
-        </a>
-        <a href="https://youtu.be/ubT4zzWnqE0">
-            <h2>Zum Video der Experimente</h2>
-        </a>
-        <a href="protokolleexperimente.html">
-            <h2>Zum Protokoll der Experimente</h2>
-        </a>
-        <a href="1src">
-        <h2>Meine Quellen</h3>
-        </a>
-        <a href="auswertung.html">
-        <h2>Zur Auswertung</h2>
-        </a>
-        <a href="fazit.html">
-            <h2>Zum Fazit</h4>
-        </a>
-        <a href="WPKCH.pdf">
-            <h2>Als PDF Herunterladen</h2>
-        </a>
-    </body>
+    </header>
+    <main>
+        <p>Kunsthonig ist eine, wie im Namen schon gesagt, Honigalternative. Diese Honigalternative wird <b>Invertzuckersirup</b> genannt. Diesen werde ich in den folgenden zwei Versuchen versuchen herzustellen. Außerdem werde ich später einige Experimente durchführen, um zu sehen, ob es die gleichen Eigenschaften wie "normaler" Blütenhonig, gefertigt von Bienen hat.</p>
+        <h2>Wählen Sie die Datei</h2>
+        <div class="links">
+            <a href="try1.html">Zum Protokoll</a>
+            <a href="https://youtu.be/H3m2DqdDFKg?si=wilUlt65vXia1oL-">Zum Video</a>
+            <a href="https://youtu.be/GLkS-4ofDNc">Zum Video des zweiten Versuchs</a>
+            <a href="https://youtu.be/ubT4zzWnqE0">Zum Video der Experimente</a>
+            <a href="protokolleexperimente.html">Zum Protokoll der Experimente</a>
+            <a href="1src">Meine Quellen</a>
+            <a href="auswertung.html">Zur Auswertung</a>
+            <a href="fazit.html">Zum Fazit</a>
+            <a href="WPKCH.pdf">Als PDF Herunterladen</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 WPK Chemie
+    </footer>
+</body>
 </html>
