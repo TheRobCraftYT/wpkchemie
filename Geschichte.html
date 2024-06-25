@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeitstrahl von der Französischen Revolution bis zur Gründung des Deutschen Reichs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ccc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #ccc;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .timeline-item .date {
+            padding: 10px 20px;
+            background: #ccc;
+            position: absolute;
+            top: 15px;
+            width: 120px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .left .date {
+            right: -160px;
+        }
+        .right .date {
+            left: -160px;
+        }
+        .timeline-item .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="date">1789</div>
+            <div class="content">
+                <h2>Französische Revolution</h2>
+                <p>Beginn der Französischen Revolution mit dem Sturm auf die Bastille.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="date">1792</div>
+            <div class="content">
+                <h2>Erster Koalitionskrieg</h2>
+                <p>Beginn der Koalitionskriege gegen revolutionäres Frankreich.</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="date">1804</div>
+            <div class="content">
+                <h2>Krönung Napoleons</h2>
+                <p>Napoleon Bonaparte wird zum Kaiser der Franzosen gekrönt.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="date">1815</div>
+            <div class="content">
+                <h2>Wiener Kongress</h2>
+                <p>Neuordnung Europas nach der Niederlage Napoleons.</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="date">1848</div>
+            <div class="content">
+                <h2>Revolutionen von 1848</h2>
+                <p>Europäische Revolutionen, einschließlich der Märzrevolution in den deutschen Staaten.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="date">1866</div>
+            <div class="content">
+                <h2>Deutscher Krieg</h2>
+                <p>Preußen besiegt Österreich im Deutschen Krieg.</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="date">1870-1871</div>
+            <div class="content">
+                <h2>Deutsch-Französischer Krieg</h2>
+                <p>Konflikt zwischen dem Norddeutschen Bund unter preußischer Führung und dem Zweiten Französischen Kaiserreich.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="date">1871</div>
+            <div class="content">
+                <h2>Gründung des Deutschen Reichs</h2>
+                <p>Proklamation des Deutschen Kaiserreichs im Spiegelsaal von Versailles.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
